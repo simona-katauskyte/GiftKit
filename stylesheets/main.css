@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#wrapper {
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, footer, .nav-logo {
+	font-family: 'Emilys Candy', cursive;
+	font-weight: lighter;
+	color: #FFF;
+}
+
+h1, h2 {
+	font-size: 3rem;
+}
+p, input, a, li {
+	font-family: 'Raleway', sans-serif;
+	color: #FFF;
+}
+
+a {
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+/*-------HEADER--------*/
+#header {
+	top: 0;
+	left: 0;
+	position: sticky;
+	background-color: #162335;
+	z-index: 9999;
+}
+
+#nav-bar {
+	display: flex;
+	align-items: center;
+}
+
+.nav-logo {
+	flex: 1;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+}
+
+#header-img {
+	height: 3rem;
+	width: auto;
+	padding: 0.2rem;
+}
+
+.nav-logo h1 {
+	font-size: 2rem;
+	padding-left: 0.5rem;
+}
+
+.nav-item-1, .nav-item-2, .nav-item-3 {
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-left: 2rem;
+	margin-right: 0.5rem;
+}
+
+/*----------COVER----------*/
+.cover {
+	position: relative;
+	background: repeating-linear-gradient(
+      180deg,
+      #FFF 0px,
+      #FFF 40px,
+      #2A4163 40px,
+      #2A4163 80px
+    );
+	height: 20rem;
+	width: auto;
+}
+
+#circle {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    -webkit-box-shadow: 0 0 20px #FFF;
+        box-shadow: 0 0 20px #FFF;
+
+	height: 15rem;
+	width: 15rem;
+	border-radius: 50%;
+	border: 2px solid rgba(255, 255, 255, 0);
+	background-image: linear-gradient(45deg, #FDDDCD, #FDC1BD);
+}
+
+.cover p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+	font-size: 1.4rem;
+	color: #2A4163;
+	font-weight: bold;
+}
+
+/*------------ABOUT and KITS----------*/
+.step {
+	font-size: 3rem;
+	color: #2A4163;
+	width: 100%;
+	padding: 2rem 0.5rem 2rem 0.5rem;
+}
+
+#introduction {
+	display: flex;
+	vertical-align: flex-start;
+	flex-wrap: wrap;
+}
+
+#about {
+	background-image: linear-gradient(45deg, #FDDDCD, #FDC1BD);
+	width: 25%;
+}
+
+#about li, #about h1, #about p {
+	color: #3255A2;
+}
+
+#about h1, #form h2, #demo-txt1 h1, #demo-txt2 h1 {
+	padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+}
+
+#about p {
+	text-align: justify;
+	padding: 0.2rem 0.5rem 0.6rem 0.5rem;
+	font-size: 1.3rem;
+}
+
+#about li, #demo-txt1 li, #demo-txt2 li {
+	text-align: justify;
+	padding: 0rem 0.6rem 0.1rem 0.1rem;
+	font-size: 1.3rem;	
+}
+
+#about ul, #demo-txt1 ul, #demo-txt2 ul {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 2rem;
+	margin-right: 1rem;
+}
+
+#kits {
+	width: 75%;
+	height: 35rem;
+	overflow: scroll;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.column img {
+	width: 100%;
+    margin-bottom: 8px;
+    vertical-align: middle;
+}
+
+.product-img:hover {
+	opacity: 0.5;
+}
+
+form {
+	background-image: linear-gradient(60deg, #FDC1BD, #7E9DA7, #2F435C, #2A4163);
+}
+
+.contacts {
+	position: relative;
+}
+
+.contacts p {
+	font-weight: bold;
+	padding: 0 0.3rem 0 0.3rem;
+	width: 60%;
+	margin: auto;
+}
+
+.contacts input {
+	margin-top: 1rem;
+	color: #2A4163;
+	font-weight: bolder;
+}
+
+#submit {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	padding: 0.1rem 0.8rem 0.1rem 0.8rem;
+	border: 1px solid rgba(255,255,255, 0.5);
+	background-color: #FFF;
+	border-radius: 40px;
+	margin-bottom: 1rem;
+}
+
+#email {
+	width: 15rem;
+	height: 1.5rem;
+	text-align: center;
+	border: 1px solid rgba(255,255,255, 0.5);
+	border-radius: 4px;
+	padding: 1rem 0.8rem 1rem 0.8rem;
+	font-size: 1rem;
+}
+
+#how {
+	background-image: linear-gradient(120deg, #FDC1BD, #7E9DA7, #2F435C, #2A4163);
+	display: flex;
+	vertical-align: flex-start;
+	flex-wrap: wrap;
+}
+
+#demo-txt1 {
+	width: 25%;
+}
+
+#demo-txt2 {
+	width: 25%;
+}
+
+iframe {
+	width: 50%;
+	height: 25rem;
+	padding: 0 0.5rem 0 0.5rem;
+}
+
+footer {
+	background-color: #162335;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	font-size: 1rem;
+}
+
+
+
+
+
